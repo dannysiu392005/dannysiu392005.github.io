@@ -22,7 +22,6 @@ body {
 header {
   width: auto;
   margin: 0 auto;  /* Make the header center */
-  height: 110px;
   text-align: center;
   order: 1;
 }
@@ -40,11 +39,6 @@ hr {
 
 #logo {
   max-width: 130px;
-  float: left;
-}
-
-#name-and-job {
-  float: right;
 }
 
 #name {
@@ -103,6 +97,12 @@ footer {
 
   .fa-linkedin {
     color: #0084bf;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  #name-and-job {
+    float: right;
   }
 }
 

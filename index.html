@@ -20,9 +20,13 @@
 
       <hr id="hline1" class="hline">
 
-      <section id="main-picture">
-        <img id="main-picture-image" src="images/banner.jpg" alt="Danny Siu's banner" >
-      </section>
+      <!-- Use diferent images for different pixels -->
+      <picture id="main-picture">
+        <source media="(max-width: 600px)" srcset="images/banner_narrow.png">
+        <source media="(max-width: 800px)" srcset="images/banner_vertical.png">
+        <img id="main-picture-image" src="images/banner.jpg" alt="Danny Siu's
+                                                             banner">
+      </picture>
       <section id="featured-work">
         <h2 id="featured-work-title">Featured Work</h2>
         <article id="ruby-number-theory" class="project">
